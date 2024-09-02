@@ -47,18 +47,18 @@ html , body{
     border-bottom: 1px solid black;
     padding: 7px;
 }
-.page2{
+.page1{
     display: flex;
     justify-content: space-between;
 }
-.page2 .left {
+.page1 .left {
     width: 280px;
     margin-left: 20px;
     margin-top: 210px;
     font-size: 19px;
     line-height: 25px;
 }
-.page2 button {
+.page1 button {
     margin-top: 25px;
     font-size: 20px;
     border: transparent;
@@ -69,69 +69,147 @@ html , body{
     
    
 }
-.page2 .right {
+.page1 .right {
     width: 700px;
     margin-right: 15px;
     font-size: 20px;
     margin-top: 210px;
 }
-.page2 .right h1{
+.page1 .right h1{
     font-weight: 300;
 }
-marquee {
+.slider{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    white-space: nowrap;
+}
     
+.slider  h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #313231;
+    display: inline-block;
     font-size: 250px;
-    font-weight: 900;
+    animation : carousal  linear 20s infinite;
 }
-marquee  img{
-    height: 190px;
+
+@keyframes carousal{
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform:translate(-100%);
+    }
 }
-.page3{
+
+.slider img{
+  height: 190px;
+  padding: 0 30px;
+}
+.page2{
     height: 70vh;
     background-color: #e5e7df;
 }
 
 
-.page3 h1{
+.page2 h1{
     padding: 20px 30px;
     width: 950px;
     font-size: 40px;
     color: #1e1e1e;
     font-weight: 100;  
 }
-.page3 hr {
+.page2 hr {
     margin-left: 2%;
     width: 96%;
     margin-top: 80px;
 }
-.page4{
+.page3{
     padding: 10px 30px;
     height: 100vh;
     background-color: #e5e7df;
     display: flex;
     font-size: 10px;
+    color: #313231;
     
     
 }
-.page4 .abc{
+.page3 .abc{
     margin-top: 50px;
-   
-    
     width: 50%;
+    display: flex;
 }
-.page4 .def{
+.page3 .abc > .circle{
+    height: 18px;
+    margin-right: 5px;
+    width: 18px;
+    background-color: #313231;; 
+    border-radius: 50%;
+}
+.page3 .def{
     margin-top: 50px;
+    width: 34%; 
+
    
-    width: 25%;
-    
+}
+.page3 .def > p{
+    margin-bottom: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #8b8c86;
+    font-weight: 200;
+    line-height: 30px;
 }
 
-.page4 .last{
+.page3 .last{
     display: flex;
     justify-content: right;
     margin-top: 50px;
+    width:15%;
+}
+.page4{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
     
-       width:25%;
+
+}
+.page4 >.page4-contain{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.page4 h1{
+    color: #313231;
+    font-size: 20px;
+    padding: 30px 30px;
+    
+}
+.page4 span{
+    color: #313231;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 280px;
+    font-weight: 900;
+    line-height: 250px;
+
+}
+.page4 span > video{
+    height: 200px;
+    width: 350px;
+}
+.page4 .footer {
+    margin-top: 0;
+    margin-left: 40.3%;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.page4 .footer p{
+    font-size: 18px;
 }
 
 
