@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.container{
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #e5e7df;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    width: 100%;
+    height: 10%;
+}
+.container .overview{
+    border-bottom: 1px solid black;
+    
+}
+.container li{
+    display: inline;
+    list-style: none;
+    font-size: 18px;
+   transition: transform ease-in-out 0.5s;
+    padding: 7px;
+}
+.container  li:hover{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+
+}
+.container .price p{
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    padding: 7px;
+}
+.page2{
+    display: flex;
+    justify-content: space-between;
+}
+.page2 .left {
+    width: 280px;
+    margin-left: 20px;
+    margin-top: 210px;
+    font-size: 19px;
+    line-height: 25px;
+}
+.page2 button {
+    margin-top: 25px;
+    font-size: 20px;
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    padding: 7px;
+
+    
+   
+}
+.page2 .right {
+    width: 700px;
+    margin-right: 15px;
+    font-size: 20px;
+    margin-top: 210px;
+}
+.page2 .right h1{
+    font-weight: 300;
+}
+marquee {
+    
+    font-size: 250px;
+    font-weight: 900;
+}
+marquee  img{
+    height: 190px;
+}
+.page3{
+    height: 70vh;
+    background-color: #e5e7df;
+}
+
+
+.page3 h1{
+    padding: 20px 30px;
+    width: 950px;
+    font-size: 40px;
+    color: #1e1e1e;
+    font-weight: 100;  
+}
+.page3 hr {
+    margin-left: 2%;
+    width: 96%;
+    margin-top: 80px;
+}
+.page4{
+    padding: 10px 30px;
+    height: 100vh;
+    background-color: #e5e7df;
+    display: flex;
+    font-size: 10px;
+    
+    
+}
+.page4 .abc{
+    margin-top: 50px;
+   
+    
+    width: 50%;
+}
+.page4 .def{
+    margin-top: 50px;
+   
+    width: 25%;
+    
+}
+
+.page4 .last{
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+    
+       width:25%;
+}
+
+
+
+    
+
