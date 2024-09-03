@@ -1,0 +1,101 @@
+nav i {
+    display: none;
+    font-size: 30px;
+}
+
+@media (max-width: 600px){
+    nav i{
+        display: initial;
+    }
+    nav ul , .price{
+        display: none;
+    }
+
+/* page 1 ---------------------->  */    
+    .page1{
+        display: initial;
+    }
+    .page1 > .left{
+        width: 100%;
+        padding:0 10px;
+    }
+    .page1 > .left p{
+        width: inherit;
+        font-size: 25px;
+        line-height: 40px;
+        
+    }
+    .page1 > .left button{
+        width: max-content;
+    }
+    .page1 > .right{
+        font-size: 20px;
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 15px;
+        margin-left: 10px;
+    }
+    .slider h1{
+        margin-top: 60px;
+        font-size: 180px;
+    }
+    .slider img{
+        height: 130px;
+    }
+
+/* page 2 ->  */
+
+    .page2 h1{
+        font-size: 30px;
+        width: 100%;
+    }
+
+/* page 3 ------------------>  */    
+
+.page3 > .abc , .def , .last  h1{
+    font-size: 9px;
+   
+}
+.page3 > .last h1{
+    font-size: 13px;
+}
+.page3 > .def p{
+    font-size: 17px;
+}
+
+/* Page 4------------------> */
+.page4{
+    margin-top: 250px;
+
+}
+.page4 > .page4-contain {
+    height: 60px;
+    margin-bottom: 200px;
+}
+.page4 > .page4-contain h1{
+    font-size: 18px;
+}
+
+.page4 > span{
+    font-size: 120px;
+    line-height: 150px;
+}
+.page4 > span > video{
+    height: 85px;
+    width: 200px;
+    line-height: 30px;   
+}
+.page4 >.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page4 > .footer > p{
+    font-size: 15px;
+    margin-left: 50px;
+
+}
+
+  
+
+}
