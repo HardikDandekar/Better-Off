@@ -14,8 +14,7 @@ nav i {
 /* page 1 ---------------------->  */    
     .page1{
         width : 100%;
-        display: initial;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     .page1 > .left{
         width: 100%;
@@ -30,10 +29,11 @@ nav i {
     .page1 > .left button{
         width: max-content;
     }
-    .page1 > .right{
-        font-size: 20px;
+    .page1 > .right h1{
+
+        font-size: 30px;
         width: 100%;
-        margin-top: 50px;
+       
         padding: 0 15px;
         
     }
@@ -75,9 +75,11 @@ nav i {
 }
 .page3 > .last{
     width: 400px;
+    
 
 }
 .page3 > .last >  h1{
+   
     font-size: 20px;
     width: 200px;
     margin-top: 80px;
@@ -104,28 +106,21 @@ width: 100%;
 }
 
 .page4 > span{
-    font-size: 120px;
-    line-height: 150px;
+    font-size: 16vh;
+    line-height: 10vh;
+   
 }
 .page4 > span > video{
-    height: 85px;
-    width: 200px;
-    line-height: 30px;   
+    height: 18vh;
+    width: 30vw;
+
+     
 }
 .page4 >.footer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.page4 > .footer > p{
-    font-size: 15px;
-    margin-left: 50px;
-
+   display: none;
 }
 
-.page1 {
-    display: none;
-}
+
   
 
 }
