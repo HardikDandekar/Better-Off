@@ -5,7 +5,7 @@
 }
 html , body{
     height: 100%;
-    width: 100%;
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e5e7df;
 
@@ -126,7 +126,7 @@ nav .price p{
 }
 .page3{
     padding: 10px 30px;
-    height: 100vh;
+    height: 100%;
     background-color: #e5e7df;
     display: flex;
     font-size: 10px;
