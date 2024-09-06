@@ -7,11 +7,11 @@ html , body{
     height: 100%;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #e5e7df;
+    /* background-color: #e5e7df; */
 
 }
 
-nav{
+nav {
     display: flex;
     position: fixed;
     top: 0;
@@ -38,14 +38,24 @@ nav li:hover{
 
 }
 nav .price p{
-    font-size: 18px;
+    font-size: 20px;
     border-bottom: 1px solid black;
     padding: 7px;
 }
 .page1{
-    display: flex;
+
+    height: 100%;
+    
+    /* display: flex; */
     justify-content: space-between;
     background-color: #e5e7df;
+   
+    /* position: relative; */
+   
+}
+.page1 > .conten{
+    
+    display: flex;
 }
 .page1 .left {
     width: 280px;
@@ -72,17 +82,28 @@ nav .price p{
     margin-top: 210px;
 }
 .page1 .right h1{
+    font-size: 40px;
+    margin-left: 250px;
     font-weight: 300;
 }
-.slider{
+
+
+.page1 > .slider img{
+    height: 160px;
+    padding: 0 10px;
+
+}
+.page1 >.slider{
+    display: block;
     width: 100%;
     height: 280px;
     overflow: hidden;
+    margin-left: 0;
     white-space: nowrap;
-    background-color: #e5e7df;
-    margin-top: 100px;
-    margin-bottom: 80px;
-}
+    /* background-color: #e5e7df; */
+   
+   
+} 
     
 .slider  h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -105,114 +126,116 @@ nav .price p{
 .slider img{
   height: 190px;
   padding: 0 30px;
-}
+} 
+
+/* -------------------------------------------- */
+ 
 .page2{
-    height: 70vh;
+    width: 100%;
+    height: 80%;
+   
+    padding:110px 30px;
     background-color: #e5e7df;
+
+
 }
-
-
 .page2 h1{
-    padding: 20px 30px;
-    width: 950px;
     font-size: 40px;
-    color: black;
-    font-weight: 100;  
+    width: 800px;
+    font-weight: 400;
+    padding-bottom: 30px;
 }
-.page2 hr {
-    margin-left: 2%;
-    width: 96%;
-    margin-top: 80px;
+
+.page2 > hr {
+    border: none;
+    margin-bottom: 5%;
+    height: 1px;
+    background-color: rgb(220, 220, 220);
 }
 .page3{
-    padding: 10px 30px;
-    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    /* margin-bottom: 5%; */
     background-color: #e5e7df;
-    display: flex;
-    font-size: 10px;
-    color: black;
-    
-    
 }
-.page3 .abc{
-    margin-top: 50px;
-    width: 50%;
-    display: flex;
+.page3 > h1:first-child
+/* .page4nav > h1:first-child*/{ 
+    font-size: 25px;
+    width: 45%;
+   font-weight: 600;
 }
-.page3 .abc > .circle{
-    height: 18px;
-    margin-right: 5px;
-    width: 18px;
-    background-color: black;; 
-    border-radius: 50%;
+.page3 > div{
+    width: 35%;
 }
-.page3 .def{
-    margin-top: 50px;
-    width: 34%; 
-
+.page3 > div h1{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-weight: 600;
    
 }
-.page3 .def > p{
-    margin-bottom: 50px;
+.page3 > div p{
     font-size: 20px;
-    margin-top: 20px;
-    color: #8b8c86;
-    font-weight: 200;
-    line-height: 30px;
+    margin-bottom: 10%;
+    font-weight: 600;
+    color: #939691;
 }
-
-.page3 .last{
-    display: flex;
-    justify-content: right;
-    margin-top: 50px;
-    width:15%;
+.page3 > h1:first-child > span,
+.page4nav > h1:first-child > span { 
+    display: inline-block;
+    background-color: black;
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.page3 h1:last-child {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 600;
+    width: 20%;
 }
 .page4{
+    
+    padding: 0 30px;
     width: 100%;
-    height: 100vh;
-    text-align: center;
-    background-color: white;
-    
-    
-
+    height: 100%;
 }
-.page4 >.page4-contain{
-    width: 100%;
-    height: 120px;
-    background-color: white;
+.page4nav{
     display: flex;
     justify-content: space-between;
 }
-.page4 h1{
-    color: black;
-    font-size: 20px;
-    padding: 30px 30px;
-    
+.page4nav h1{
+   padding: 10px 30px;
+    font-size: 25px;
 }
-.page4 span{
-    color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 280px;
+.page4content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page4-container{
+    margin-top: 200px;
+}
+.page4-container h1{
+    display: flex;
+    justify-content: center;
+    font-size: 230px;
     font-weight: 900;
-    line-height: 250px;
+    line-height: 200px;
 
 }
-.page4 span > video{
-    height: 200px;
-    width: 350px;
+.page4-container video{
+    height: 180px;
 }
-.page4 .footer {
-    margin-top: 0;
-    width: 100%;
-   
 
-}
-.page4 .footer p{
-    font-size: 18px;
-    display: inline;
-    padding: 0 20px;
-    margin-left: 105px;
-}
+
+
+
+
+
+
+
 
 
 
